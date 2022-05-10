@@ -12,13 +12,26 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-$primary   : #1976D2;
-$secondary : #26A69A;
-$accent    : #9C27B0;
+// Palette generated with coolors.co (https://coolors.co/6d6a75-08052d-2012b2-e4e2f6-a4031f)
 
-$dark      : #1D1D1D;
+/* SCSS HEX */
+$old-lavender: #6d6a75ff;
+$oxford-blue: #08052dff;
+$trypan-blue: #2012b2ff;
+$lavender-web: #e4e2f6ff;
+$ruby-red: #a4031fff;
+$mandarin: #ef7b45;
+$middle-green-yellow: #b1cc74;
+$turquoise: #34d1bf;
 
-$positive  : #21BA45;
-$negative  : #C10015;
-$info      : #31CCEC;
-$warning   : #F2C037;
+$primary: $trypan-blue;
+$secondary: $old-lavender;
+$accent: $ruby-red;
+
+$dark: $oxford-blue;
+$light: $lavender-web;
+
+$positive: $middle-green-yellow;
+$negative: $ruby-red;
+$info: $turquoise;
+$warning: $mandarin;

@@ -1,1 +1,18 @@
 // app global css in SCSS form
+
+@font-face {
+  font-family: baloo;
+  src: url(./fonts/Baloo2-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: 'baloo';
+}
+
+.text-light {
+  color: $light;
+}
+
+.bg-light {
+  background-color: $light;
+}

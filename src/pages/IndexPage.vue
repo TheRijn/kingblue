@@ -1,49 +1,57 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-    <example-component
-      title="Example component"
-      active
-      :todos="todos"
-      :meta="meta"
-    ></example-component>
+  <q-page class="">
+    <section id="video-banner">
+      <banner-video />
+    </section>
+
+    <section id="intro-text" class="text-center">
+      <h2>
+        Welcome to King Blue.
+        <small>
+          Listen to our music, visit our events, and view our footage.
+        </small>
+      </h2>
+    </section>
+
+    <section class="bg-dark text-light">
+      <h2>Next up on the agenda:</h2>
+      <q-list>
+        <q-item>Oerknal 21-05-2022</q-item>
+      </q-list>
+    </section>
+
+    <footer></footer>
   </q-page>
 </template>
 
 <script lang="ts">
-import { Todo, Meta } from 'components/models';
-import ExampleComponent from 'components/ExampleComponent.vue';
 import { defineComponent } from 'vue';
+import BannerVideo from '../components/home/banner-video.vue';
 
 export default defineComponent({
   name: 'IndexPage',
-  components: { ExampleComponent },
   data() {
-    const todos: Todo[] = [
-      {
-        id: 1,
-        content: 'ct1'
-      },
-      {
-        id: 2,
-        content: 'ct2'
-      },
-      {
-        id: 3,
-        content: 'ct3'
-      },
-      {
-        id: 4,
-        content: 'ct4'
-      },
-      {
-        id: 5,
-        content: 'ct5'
-      }
-    ];
-    const meta: Meta = {
-      totalCount: 1200
-    };
-    return { todos, meta };
-  }
+    return {};
+  },
+  components: { BannerVideo },
 });
 </script>
+
+<style lang="scss" scoped>
+#video-banner {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+#intro-text {
+  padding: 50px 0;
+  width: 75%;
+  margin: auto;
+}
+
+footer {
+  height: 50px;
+  background: $secondary;
+}
+</style>
