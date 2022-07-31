@@ -55,7 +55,7 @@ module.exports = configure(function (ctx) {
       vueRouterMode: 'history', // available values: 'hash', 'history'
 
       // transpile: false,
-      // publicPath: '/',
+      publicPath: '/kingblue/',
 
       // Add dependencies for transpiling with Babel (Array of string/regex)
       // (from node_modules, which are by default not transpiled).
@@ -204,12 +204,6 @@ module.exports = configure(function (ctx) {
         // https://www.electron.build/configuration/configuration
 
         appId: 'kingblue',
-      },
-      extendWebpackMain(cfg) {
-        cfg.resolve.alias = {
-          ...cfg.resolve.alias,
-          '@': path.resolve(__dirname, './src'),
-        };
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
