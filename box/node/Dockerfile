@@ -1,4 +1,4 @@
-FROM node:18 as build
+FROM node:18-alpine as build
 
 WORKDIR /app
 
@@ -10,6 +10,6 @@ ADD . /app/
 
 RUN npx quasar build
 
-FROM nginx:latest as prod
+FROM nginx:alpine as prod
 
 COPY --from=build /app/dist/spa /usr/share/nginx/html
