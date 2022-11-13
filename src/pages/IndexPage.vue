@@ -13,12 +13,12 @@
       </h2>
     </section>
 
-    <section class="bg-dark text-light">
+    <!-- <section class="bg-dark text-light">
       <h2>Next up on the agenda:</h2>
       <q-list>
         <q-item>Oerknal 21-05-2022</q-item>
       </q-list>
-    </section>
+    </section> -->
 
     <footer></footer>
   </q-page>
