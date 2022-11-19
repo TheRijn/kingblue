@@ -20,7 +20,7 @@ const linksList = [
   // },
   {
     title: 'King Blue Songlist',
-    caption: 'Listen to original the music',
+    caption: 'Listen to the original music',
     icon: 'fa-brands fa-spotify',
     link: 'https://open.spotify.com/playlist/42zG6elSludDyWYeFAv4w6?si=dbd72cd5217942f1',
   },
