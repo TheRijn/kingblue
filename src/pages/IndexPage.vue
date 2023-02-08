@@ -6,7 +6,7 @@
 
     <section id="intro-text" class="text-center">
       <h2>
-        Welcome to King Blue.
+        Welcome to King Blue.<br />
         <small>
           Listen to our music, visit our events, and view our footage.
         </small>
