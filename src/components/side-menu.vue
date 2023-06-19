@@ -14,9 +14,9 @@ import EssentialLink from 'components/EssentialLink.vue';
 const linksList = [
   {
     title: 'The Next Gig',
-    caption: 'Oerknal 21-05-2022',
+    caption: 'Maslow 30-06-2023',
     icon: 'nightlife',
-    to: '/poster',
+    to: '/maslow',
   },
   {
     title: 'King Blue Songlist',

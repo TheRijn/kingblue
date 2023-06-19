@@ -14,10 +14,11 @@
     </section>
 
     <section class="bg-dark text-light">
-      <h2>Next up on the agenda:</h2>
-      <q-list>
-        <q-item>Oerknal 21-05-2022</q-item>
-      </q-list>
+      <YouTube 
+        src="https://www.youtube.com/watch?v=jNQXAC9IVRw" 
+        @ready="onReady"
+        ref="youtube" 
+      />
     </section>
 
     <footer></footer>
@@ -26,14 +27,20 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import YouTube from 'vue3-youtube';
 import BannerVideo from '../components/home/banner-video.vue';
 
 export default defineComponent({
   name: 'IndexPage',
+  components: { BannerVideo, YouTube },
   data() {
     return {};
   },
-  components: { BannerVideo },
+  methods: {
+    onReady() {
+      this.$refs.youtube.playVideo()
+    }
+  },
 });
 </script>
 
