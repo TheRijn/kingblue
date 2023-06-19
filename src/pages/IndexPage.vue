@@ -13,8 +13,11 @@
       </h2>
     </section>
 
-    <section class="bg-dark text-light">
+    <section class="bg-dark text-light row justify-center">
       <YouTube
+        class="video"
+        width="800"
+        height="450"
         src="https://youtu.be/T8FL0tWVFmA"
         @ready="onReady"
         ref="youtube"
@@ -38,8 +41,8 @@ export default defineComponent({
   },
   methods: {
     onReady() {
-      this.$refs.youtube.playVideo()
-    }
+      (this.$refs.youtube as typeof YouTube).playVideo();
+    },
   },
 });
 </script>
@@ -60,5 +63,9 @@ export default defineComponent({
 footer {
   height: 50px;
   background: $secondary;
+}
+
+.video {
+  width: 100%;
 }
 </style>
