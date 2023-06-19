@@ -15,7 +15,7 @@
 
     <section class="bg-dark text-light">
       <YouTube 
-        src="https://www.youtube.com/watch?v=jNQXAC9IVRw" 
+        src="https://youtu.be/T8FL0tWVFmA" 
         @ready="onReady"
         ref="youtube" 
       />
