@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build
 
 on:
   push:
@@ -7,8 +7,6 @@ on:
     tags: ["v*.*.*"]
   pull_request:
     branches: ["master"]
-  schedule:
-    - cron: "0 1 * * *"
   workflow_dispatch:
 
 env:
@@ -64,20 +62,3 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy Image to Sever
-        id: deploy
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
-          script: |
-            cd /opt/kingblue
-            docker compose --ansi=never pull
-            docker compose --ansi=never up -d
