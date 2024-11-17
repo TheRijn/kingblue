@@ -18,6 +18,7 @@ jobs:
     - run: npx quasar build
     - uses: actions/upload-artifact@v4
       with:
+        name: github-pages
         path: dist/spa
 
   # Deployment job
