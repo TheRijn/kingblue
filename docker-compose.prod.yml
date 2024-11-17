@@ -1,7 +1,0 @@
-services:
-  web:
-    build:
-      context: .
-      dockerfile: ./box/node/Dockerfile
-    ports:
-      - 8080:80
