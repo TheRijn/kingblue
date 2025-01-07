@@ -13,12 +13,6 @@ import EssentialLink from 'components/EssentialLink.vue';
 
 const linksList = [
   {
-    title: 'The Next Gig',
-    caption: 'Maslow 30-06-2023',
-    icon: 'nightlife',
-    to: '/maslow',
-  },
-  {
     title: 'King Blue Songlist',
     caption: 'Listen to the original music',
     icon: 'fa-brands fa-spotify',
@@ -40,4 +34,3 @@ export default {
 </script>
 
 <style lang="scss" scoped></style>
->
