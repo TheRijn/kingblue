@@ -18,6 +18,12 @@ const linksList = [
     icon: 'fa-brands fa-spotify',
     link: 'https://open.spotify.com/playlist/42zG6elSludDyWYeFAv4w6?si=dbd72cd5217942f1',
   },
+  {
+    title: 'Instagram',
+    caption:'King Blue op Instagram',
+    icon: 'fa-brands fa-instagram',
+    link: 'https://www.instagram.com/kingblue.music'
+  }
 ];
 
 export default {
